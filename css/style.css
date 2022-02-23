@@ -1,0 +1,59 @@
+body style {
+	width: 100%;
+	height: 100%;
+}
+.block-wrapper {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	background: none;
+	
+
+	/*transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	transition-delay: 3s;*/
+
+}
+.child-block {
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 500%;
+	left: 500%;
+	transform: translate(-50%,-50%);
+	background: none;
+	transition: all 0.5s linear;
+	animation: block-wrapper 8s 5;
+}
+
+
+.child-block1 {
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 500%;
+	right: 50%;
+	transform: translate(-50%,-50%);
+	background: none;
+	transition: all 0.5s linear;
+	animation: block-wrapper 10s 5;
+}
+.child-block2 {
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 500%;
+	left: 800%;
+	transform: translate(-50%,-50%);
+	transition: all 0.5s linear;
+	animation: block-wrapper 12s 5;
+}
+
+@keyframes block-wrapper {
+	/*0% {top: 200px}
+	25% {top: 400px;}
+	50% {top: 600px;}
+	85% {top: 800px;}*/
+	100% {top: 100px;}
+}
